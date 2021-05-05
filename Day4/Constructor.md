@@ -4,6 +4,8 @@ Constructor :
 	2) Whenever we creating an object some piece of code executed automatically. This piece of code is nothing but CONSTRUCTOR
 	3) The main purpose of constructor is to initialize an object.
  e.g.
+ 
+ 
 class Student
 {
 	String name;
@@ -65,6 +67,8 @@ class Student
 
 Q) Wtrite a program to print no of object created for a class
 --> 
+
+
  class Test
 {
 	static int count =0;
