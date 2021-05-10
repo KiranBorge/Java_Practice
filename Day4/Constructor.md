@@ -4,7 +4,9 @@ Constructor :
 	2) Whenever we creating an object some piece of code executed automatically. This piece of code is nothing but CONSTRUCTOR
 	3) The main purpose of constructor is to initialize an object.
  e.g.
-class Student
+ 
+ 
+public class Student
 {
 	String name;
 	int rollno;
@@ -31,7 +33,7 @@ class Student
 	hence it is legal (but stupid) to have method name same as class name. but not good programming practice
 
 	e.g
-	class Test
+	public class Test
 	{
 		public void Test()
 		{
@@ -46,7 +48,7 @@ class Student
 4) The only applicable modifier for constructor is public,private, protected and <default>. 
    if we are trying to declare any other modifier we will get compile time error
 	eg.
-		class Test
+		public class Test
 		{
 			static Test()
 			{
@@ -65,7 +67,9 @@ class Student
 
 Q) Wtrite a program to print no of object created for a class
 --> 
- class Test
+
+
+public class Test
 {
 	static int count =0;
 	{
