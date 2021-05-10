@@ -1,0 +1,60 @@
+1) What is exception?
+--> An unexpected and unwanted event that disturb the normal flow of program is called exception.
+
+2) What is exception handling?
+--> Exception handling doesn't mean repairing of exception. we have to provide alternative way to continue the rest of the program normally. 
+    This is concept of exception handling.
+ 
+
+3) What are the method we use to print exception information?
+--> Throwable class defines following method to print exception information
+    1) printStackTrace() -  print Name of Exception : Description 
+				stacktrace
+    2) toString() - print the Name of Exception : Description 
+    3) getMessage - print description only on console.
+
+4) What is checked exception?
+--> The exception which are checked by compiler for smooth excution of program are called checked exception.
+
+5) What is unchecked exception?
+--> The exception which are not checked by compiler whether programmer handling or not. such type of exception are called unchecked exceptions.
+
+6) Can we keep other statements in between try, catch and finally blocks?
+--> No we can't. We have to write try block with either catch or finally bock or both simultaniously
+
+7) Can we write only try block without catch and finally blocks?
+--> No. We will get compile time error saying "try without catch or finally"
+
+8) There are three statements in a try block – statement1, statement2 and statement3. After that there is a catch block to catch 
+   the exceptions occurred in the try block. Assume that exception has occurred in statement2. Does statement3 get executed or not?
+--> No. When exception raised in try block at statement2 then control will go to the catch block, after completing handling code in catch block
+    then directly control goes out to try block.
+
+9) What is unreachable catch block error?
+--> When you are keeping multiple catch blocks, the order of catch blocks must be from most specific to most general ones. 
+   i.e sub classes of Exception must come first and super classes later. If you keep super classes first and sub classes later, 
+   compiler will show unreachable catch block error.
+
+10) Difference between throw and throws.
+-->  throw - Sometimes we create an exception explicitly and we are handover this exception to JVM. we can do this by using throw keyword.
+     throws - in our program there is a posibility to raised checked exception, then we should handle it otherwise we will get compile time error.
+              we can handle checked exception by 2 ways 1) by using try-catch-finally block and 2) using throws keyword
+
+11) Explain the hierarchy of exceptions in java?
+--> Root class of Exception handling is "Throwable". There are two subclass of Throwable that is Exception and Error.
+    Exception: this class has following sub classes: RuntimeException, IOException, ServletException, RemoteException etc. 
+               RuntimeException(Sub classes: ArithmaticException, NullPointerException, ClassCastException and IndexOutOfBoundException
+               (SubClasses: ArrayIndexOutOfBoundException, StringIndexOutOfBoundException). this is unchecked exception.
+    Error: Error has following sub-classes : VirtualMachineError( subclass : StackOverFlowError and OutOfMemoryError), AssertionError, ExceptionInInitilizerError
+           Error is unchecked exception  
+12) What are run time exceptions in java. Give example?
+--> The exceptions which occur at run time are called as run time exceptions.eg.RuntimeException(Sub classes: ArithmaticException, NullPointerException, ClassCastException and IndexOutOfBoundException
+               (SubClasses: ArrayIndexOutOfBoundException, StringIndexOutOfBoundException). this is unchecked exception.
+
+13) Can we keep the statements after finally block If the control is returning from the finally block itself?
+--> No. , control is returning from the finally block itself. Compiler will not see the statements after it. That’s why it shows unreachable code error.
+    we will get compiletime error saying "Unrachable statement"
+
+14) What is Re-throwing an exception in java? 
+--> We can use this approch to convert one type of exception to another type.              
+            
